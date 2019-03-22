@@ -1,0 +1,12 @@
+<h1> User Lists</h1> 
+
+<ul>
+  <% @users.each do |user| %>
+    <li>
+      <%= link_to user.usergit name, user_path(user) %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Create New User", new_user_path %>
